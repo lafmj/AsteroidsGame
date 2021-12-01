@@ -23,12 +23,15 @@ public void draw()
     if (key == 'd'|| key == 'D') {
       f.turn(6);
     }
-    if (key == 'f'|| key== 'F') {
+    if (key == 'w'|| key== 'W') {
       f.accelerate(0.6);
     }
-    if (key == 'b'|| key == 'B') {
+    if (key == 's'|| key == 'S') {
       f.accelerate(-0.6);
     }
+    if (key == ' ') {
+    f.pause();
+  }
     if (key == 'h' || key == 'H'){
     f.hyperspace();
     }
