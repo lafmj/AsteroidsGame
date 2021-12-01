@@ -20,6 +20,9 @@ public void draw()
     if (key == 'a'|| key == 'A') {
       f.turn(-6);
     }
+    if (key == 'd'|| key == 'D') {
+      f.turn(6);
+    }
     if (key == 'f'|| key== 'F') {
       f.accelerate(0.6);
     }
