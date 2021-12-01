@@ -70,10 +70,4 @@ class Floater //Do NOT modify the Floater class! Make changes in the Spaceship c
     rotate(-1*dRadians);
     translate(-1*(float)myCenterX, -1*(float)myCenterY);
   }
-  public void hyperspace (){
-    myXspeed = 0;
-    myYspeed = 0;
-    myCenterX = (int)(Math.random()*400);
-    myCenterY = (int)(Math.random()*400);
-  }
 } 
