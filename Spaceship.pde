@@ -1,10 +1,12 @@
 class Spaceship extends Floater  
 {   
+  double turn = (Math.random()*12)-6;
      public void hyperspace (){
     myXspeed = 0;
     myYspeed = 0;
     myCenterX = (int)(Math.random()*400);
     myCenterY = (int)(Math.random()*400);
+    f.turn(turn);
   }
   public void pause (){
      myXspeed = 0;
