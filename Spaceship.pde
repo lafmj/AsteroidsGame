@@ -9,7 +9,7 @@ class Spaceship extends Floater
     f.turn(ro);
   }
   public void pause (){
-     myXspeed = 0;
+    myXspeed = 0;
     myYspeed = 0;
   }
     Spaceship () {
