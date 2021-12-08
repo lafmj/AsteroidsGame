@@ -10,7 +10,7 @@ public void setup()
   for (int i = 0; i <s.length; i++) {
     s[i] = new Star();
   }
-  for (int i = 0; i < 22; i ++)
+  for (int i = 0; i < 10; i ++)
     a.add(new Asteroids());
   f =  new Spaceship();
 }
@@ -24,9 +24,10 @@ public void draw()
   {
     a.get(i).show();
     a.get(i).move();
-    float d = dist(f.getX(), f.getY(), a.get(i).getX(), a.get(i).getY());
-    if (d < 10)
+   float d = dist(f.getX(), f.getY(), a.get(i).getX(), a.get(i).getY());
+    if (d < 15)
       a.remove(i);
+    
   }
    f.show();
    f.move();
@@ -53,4 +54,3 @@ public void keyPressed() {
   }
 }
 
-}
