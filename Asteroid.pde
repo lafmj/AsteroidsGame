@@ -1,5 +1,4 @@
 class Asteroids extends Floater {
-  new double myAngle;
   private double rotSpeed;
   Asteroids()
   {
@@ -34,4 +33,9 @@ class Asteroids extends Floater {
     super.move();
    
   }
+  public void setX(int x){myCenterX = x;}
+  public int getX(){return (int)myCenterX;}
+  public void setY(int y){myCenterY = y;}   
+  public int getY(){return (int)myCenterY;}
+
 }
